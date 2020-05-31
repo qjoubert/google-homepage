@@ -1,0 +1,152 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgba(0, 0, 0, .8);
+  text-decoration: none;
+}
+
+/*******************/
+/* NAVIGATION BARS */
+/*******************/
+
+nav li {
+  float: left;
+  margin: 1rem;
+}
+
+nav li:last-child, 
+nav li:nth-child(5),
+nav li:nth-child(4),
+nav li:nth-child(3) {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  font-size: 1.3rem;
+  padding: .5rem;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+.grid-icon {
+  fill: rgba(0, 0, 0, .5);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.grid-icon:hover {
+  fill: rgba(0, 0, 0, .8);
+}
+
+.sign-in-button {
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: -.3rem;
+  padding: .8rem 1.3rem;
+}
+
+.sign-in-button:hover {
+  background-color: #3174e3;
+  border: 1px solid #3174e3;
+  text-decoration: none;
+}
+
+footer nav li:nth-child(3) {
+  float: left;
+}
+
+footer nav li:nth-child(4) {
+  margin-right: 3rem;
+}
+
+/********/
+/* MAIN */
+/********/
+
+main {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.google-logo {
+  display: block;
+  margin: 1rem auto;
+}
+
+.search-bar {
+  display: block;
+  margin: 3rem auto;
+  padding: 1.2rem;
+  width: 40%;
+  border-radius: 25px;
+  border: 1px solid rgba(0,0,0,.2);
+}
+
+.search-bar:focus, .search-bar:hover {
+  outline: none;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, .2), -1px -2px 3px rgba(0, 0, 0, .1);
+}
+
+.main__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main__buttons-wrapper button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  color: #5F6368;
+  margin: 0 .5rem;
+  padding: 1rem 2rem;
+}
+
+.main__buttons-wrapper button:hover {
+  border: 1px solid rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .8);
+}
+
+.main__buttons-wrapper button:focus {
+  border: 1px solid #4885ed;
+  outline: none;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+  background-color: #f2f2f2;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+footer a {
+  color: #5F6368;
+}
